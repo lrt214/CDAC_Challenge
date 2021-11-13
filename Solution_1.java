@@ -32,7 +32,7 @@ public class Solution_1 {
 	        rigth--;
 	    }
 	    if(left >= rigth) return 0;
-	    int max = Math.max(left + 1, rigth - left);
+	    int max = Math.max(left + 1, n - left);
 	    for(int i = 0; i <= left; i++){
 	        for(int j = rigth; j < n; j++){
 	            if(arr[j] >= arr[i]){
